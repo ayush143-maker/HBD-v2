@@ -1,19 +1,15 @@
 # HBD-v2
 
-A minimal, interactive birthday microsite built around a personal message and a sequence of celebratory sections.
+HBD-v2 is a minimal birthday microsite built around a personal message and a series of celebratory sections. Rather than presenting a conventional long-form website, it uses a focused, single-page layout to guide the visitor through the greeting.
 
-## Run locally
+## Preview locally
 
-Open index.html in a modern browser. If browser restrictions block local assets or APIs, serve the folder over HTTP.
+The project is a static HTML experience. Open index.html in a modern browser, or start a local server from the repository directory:
 
-## Structure and assets
+    python -m http.server 8000
 
-`index.html` is the primary entry point. Keep linked images, audio, scripts, and styles in their existing relative locations; renaming files may break references.
+Then open http://localhost:8000.
 
-## Preview and deployment
+## Updating the celebration
 
-Open the page in a modern browser. If local-file behavior is restricted, start a simple HTTP server from this folder and open the local address in your browser. For static hosting, publish the correct root folder and check asset paths after deployment.
-
-## Making changes
-
-Test the page after edits and check both phone-sized and desktop-sized viewports. Confirm that buttons and other visible interactions work in the deployed version as well as locally.
+The page content and visual sequence are defined in index.html. When editing the message or replacing visual assets, preserve the order of the sections and check how the experience feels on a narrow screen. No package manager or build command is required by the current repository.
