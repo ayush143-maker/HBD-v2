@@ -1,6 +1,6 @@
 # HBD-v2
 
-A birthday microsite built around a personal message and celebratory sections. The page is in the top-level `index.html` (title: “A birthday page ✦”).
+HBD-v2 is a birthday microsite built around a personal message and celebratory sections. Its top-level `index.html` is the page entry point, with the document title “A birthday page ✦”.
 
 ## Preview locally
 
@@ -10,38 +10,16 @@ Open `index.html` in a browser, or serve the repository directory:
 python -m http.server 8000
 ```
 
-Then visit <http://localhost:8000>. The page requests Cormorant Garamond and Manrope from Google Fonts, so those fonts depend on network access.
+Then visit [http://localhost:8000](http://localhost:8000). No dependency installation or build scripts are listed. The page requests Cormorant Garamond and Manrope from Google Fonts, so the fonts depend on network access.
 
-## Deployment-readiness checklist
+## Editing and review
 
-The repository has a top-level `index.html` and no listed build scripts. The following are recommendations to check before and after publishing; they do not indicate that a deployment has taken place.
+The page content and typeface references are in `index.html`. If changing the typefaces, update both the font link and its corresponding styling. Preserve existing relative asset references when editing or adding assets, and verify that each reference matches a file at its published location.
 
-### Before publishing
-
-- [ ] Use the repository root as the output directory so the top-level `index.html` is included.
-- [ ] Keep asset and page references relative where appropriate, and verify that each reference points to a file at its published location. Preserve existing relative references when editing or adding assets.
-- [ ] No environment configuration template is identified in the supplied repository files. Do not add environment configuration unless the project gains a template or a documented need for it.
-- [ ] If changing the typefaces, update both the font link and the corresponding styling in `index.html`.
-- [ ] Review the message and section order, inspect the layout at narrow and wide viewport sizes, and check any added asset references.
-
-### After publishing
-
-- [ ] Open the published page and review it in a browser.
-- [ ] Confirm the page loads from its published location and that relative references resolve correctly.
-- [ ] Review the layout at narrow and wide viewport sizes, and check that the Google Fonts load when network access is available.
-
-## Contributor handoff
-
-Keep changes scoped to the page and content being updated. Before handing off, describe what changed and note anything that still needs review. The checklist above is guidance, not a report of completed checks.
-
-**Handoff summary:** Describe the changes and note anything that still needs review.
-
-## Final release review
-
-- Open `index.html` from the published location and confirm the page loads as expected.
-- Test with network access available and keep a sensible fallback for externally loaded resources.
-- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
+Before sharing, review the personal message and section order. Preview the page at narrow and wide viewport sizes, checking the content and layout for clipping or overflow. If the Google Fonts requests are unavailable, check that the page remains legible with its fallback typography.
 
 ## Repository map
 
-- `index.html` — HTML page entry point.
+- `index.html` — page entry point, message, sections, and font references.
+
+No deployment configuration or environment template is identified in the supplied repository content. For a static publication, include the entry page and any files it references.
