@@ -4,7 +4,7 @@ A minimal birthday microsite built around a personal message and a sequence of c
 
 ## Preview and review locally
 
-Open `index.html` in a modern browser, or start a local server from the repository directory:
+Open `index.html` in a browser, or start a local server from the repository directory:
 
     python -m http.server 8000
 
