@@ -1,6 +1,6 @@
 # HBD-v2
 
-A minimal birthday microsite built around a personal message and a sequence of celebratory sections. Open the single-page experience to read through the greeting; no additional controls are described.
+A minimal birthday microsite built around a personal message and a sequence of celebratory sections. The single-page experience is contained in the top-level `index.html`; no additional controls are described.
 
 ## Preview locally
 
