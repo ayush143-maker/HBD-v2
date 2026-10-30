@@ -4,12 +4,12 @@ A minimal birthday microsite built around a personal message and a sequence of c
 
 ## Preview locally
 
-Open `index.html` in a modern browser, or start a local server from the repository directory:
+Open `index.html` in a modern browser, or, from the repository directory, start a local server:
 
     python -m http.server 8000
 
-Visit http://localhost:8000.
+Then visit http://localhost:8000. No package manager or build command is required by the current repository.
 
 ## Updating the celebration
 
-Content and visual sequence are defined in `index.html`. Preserve the section order when editing the message or visual assets. No package manager or build command is required by the current repository.
+Content and visual sequence are defined in `index.html`. Preserve the section order when editing the message or visual assets.
