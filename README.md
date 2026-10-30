@@ -35,3 +35,9 @@ The repository has a top-level `index.html` and no listed build scripts. The fol
 Keep changes scoped to the page and content being updated. Before handing off, describe what changed and note anything that still needs review. The checklist above is guidance, not a report of completed checks.
 
 **Handoff summary:** Describe the changes and note anything that still needs review.
+
+## Final release review
+
+- Open `index.html` from the published location and confirm the page loads as expected.
+- Test with network access available and keep a sensible fallback for externally loaded resources.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
