@@ -1,13 +1,13 @@
 # HBD-v2
 
-A minimal birthday microsite built around a personal message and a sequence of celebratory sections. The single-page experience is contained in the top-level `index.html`; no additional controls are described.
+A minimal birthday microsite built around a personal message and a sequence of celebratory sections. The single-page experience is contained in the top-level `index.html`.
 
-## Preview and review locally
+## Preview locally
 
-Open `index.html` in a browser, or start a local server from the repository directory:
+Open `index.html` in a browser, or serve the repository directory:
 
-    python -m http.server 8000
+```sh
+python -m http.server 8000
+```
 
-Then visit http://localhost:8000. No package manager or build command is required by the current repository. Content and visual sequence are defined in `index.html`; after editing, review the message and preserve the section order.
-
-No hosting provider or provider-specific deployment steps are documented. The page can be served as static content; no additional deployment configuration is described.
+Then visit http://localhost:8000. No package manager or build command is required. Content and visual sequence are defined in `index.html`; after editing, review the message and preserve the section order. No deployment configuration is documented.
