@@ -18,6 +18,15 @@ The page title is “A birthday page ✦”. Update the visible message and titl
 
 The root file list contains no separate media or asset directory. If you add an image or other asset, make sure its reference in `index.html` points to its actual location.
 
+## Troubleshooting
+
+Use these as diagnostic steps, not as claims that the page currently has a problem:
+
+1. **Confirm the entry page.** Open the top-level `index.html`, or serve the repository directory and visit its root URL. Confirm the served directory if the expected message or sections are not shown.
+2. **Check paths and local files.** Preserve relative paths for any assets added to the page. If one fails to load, confirm the file is present and its reference in `index.html` matches its location; no separate asset directory is listed at the root.
+3. **Inspect browser diagnostics.** Check the console during page load and while moving through the page. In the Network panel, inspect failed requests and their URLs to help identify missing local files or other loading errors.
+4. **Distinguish external fonts.** Cormorant Garamond and Manrope are requested from Google Fonts, so their loading depends on network access to that service. Check those requests separately from local assets and consider how the page looks if the fonts are unavailable.
+
 ## Configuration and data handling
 
 This is a static page with no environment template or backend configuration listed. Keep credentials and private values out of `index.html` and other tracked files; anything embedded in the page is delivered to visitors and cannot be secret. Review the message and any added assets for personal or sensitive content before sharing or publishing them. The linked Google Fonts are retrieved from an external service by visitors' browsers.
@@ -26,10 +35,8 @@ This is a static page with no environment template or backend configuration list
 
 This is a checklist for future review, not a report of completed browser testing or verified results.
 
-- Open `index.html` in current versions of browsers relevant to the page's intended audience. Also review it through the local server above to check loading in a served-page context.
+- Review the page in current versions of browsers relevant to its intended audience.
 - Read the message and scroll through the celebratory sections to check that their existing order is preserved after content edits.
-- Inspect the browser console during page load and while moving through the page. Investigate errors that affect the message or presentation.
-- Inspect the Network panel for failed requests. Check that local assets you add resolve at the paths referenced in `index.html`; the root file list contains no separate asset directory. Check the Google Fonts requests for Cormorant Garamond and Manrope, confirm they are intentional, and consider the fallback appearance if they cannot load.
 - Inspect the layout at a narrow phone-sized viewport and a wide desktop-sized viewport. Check the message, section sequence, and typography for clipping, overflow, or difficult-to-read text.
 - If media is added, review its dimensions and file size for its role. Before removing assets, confirm they are no longer referenced.
 
