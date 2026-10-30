@@ -1,6 +1,6 @@
 # HBD-v2
 
-HBD-v2 is a birthday microsite built around a personal message and celebratory sections. Its top-level `index.html` is the page entry point, with the document title “A birthday page ✦”.
+HBD-v2 is a personalized birthday microsite with a message, interactive gift, cake, five wish balloons, and four photo slots. The top-level `index.html` is the page entry point. The recipient and sender can be supplied in the URL, making it possible to personalize the greeting without editing the page’s copy for each visit.
 
 ## Preview locally
 
@@ -10,16 +10,16 @@ Open `index.html` in a browser, or serve the repository directory:
 python -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000). No dependency installation or build scripts are listed. The page requests Cormorant Garamond and Manrope from Google Fonts, so the fonts depend on network access.
+Then visit [http://localhost:8000](http://localhost:8000). No dependency installation or build scripts are listed. Cormorant Garamond and Manrope load from Google Fonts and require network access for those fonts.
 
-## Editing and review
+## Personalize and interact
 
-The page content and typeface references are in `index.html`. If changing the typefaces, update both the font link and its corresponding styling. Preserve existing relative asset references when editing or adding assets, and verify that each reference matches a file at its published location.
+Add URL parameters such as `?name=Priya&from=Rahul` to set the recipient and sender. Values are trimmed to 24 characters; the recipient’s first character is capitalized. The provided values are inserted into the page text, and a supplied name also updates the document title. The displayed date comes from the browser’s locale and current date, not a fixed birthday date. Review the resulting text and URL before sharing.
 
-Before sharing, review the personal message and section order. Preview the page at narrow and wide viewport sizes, checking the content and layout for clipping or overflow. If the Google Fonts requests are unavailable, check that the page remains legible with its fallback typography.
+Tap the gift card to toggle between its closed and voucher views. The cake takes two taps to light and then blow out its candle; there is no control to relight it afterward. Each of five balloons reveals an individual wish when popped. After all five are popped, a completion message and re-inflate control appear.
 
-## Repository map
+## Photos, motion, and files
 
-- `index.html` — page entry point, message, sections, and font references.
+The four photo slots reference `images/photo-01.jpg` through `images/photo-04.jpg`. Missing images are replaced by inline SVG illustrations, and some slots load lazily. Keep those relative paths valid when publishing or update the references in `index.html` if you move the photos.
 
-No deployment configuration or environment template is identified in the supplied repository content. For a static publication, include the entry page and any files it references.
+Sections reveal as they enter the viewport. A reduced-motion CSS mode removes or shortens animations and transitions. The page holds personalization and interaction state in its scripts: it makes no application API calls and uses no local or session storage. Reloading resets gift, cake, and balloon interactions; personalization can be applied again through the URL. Edit the message, layout, font references, and behavior in `index.html`. For static publication, include that page and the referenced images, and preserve their relative paths.
