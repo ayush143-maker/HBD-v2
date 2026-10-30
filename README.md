@@ -20,13 +20,14 @@ The root file list contains no separate media or asset directory. If you add an 
 
 ## Manual review checklist
 
-These are actions to perform during review, not verified results.
+These are actions to perform during review, not verified results or measured performance.
 
-- Open the known entry page, `index.html`, in a browser, or visit `http://localhost:8000` after starting the local server above.
+- Open `index.html` in a browser, or visit `http://localhost:8000` after starting the local server above.
 - Read the message and scroll through the celebratory sections to check that their existing order is preserved after content edits.
-- Check any image or media references in `index.html` against the assets' actual paths, especially if you added or moved assets.
+- Check local image, audio, and font references in `index.html` against files that exist at those paths. The root file list contains no separate asset directory.
+- If media is added, review its dimensions and file size for its role; avoid oversized media and remove assets only after confirming they are unused.
+- The page links to Cormorant Garamond and Manrope through Google Fonts. Confirm that the external font dependency is intentional and the linked families are used. Keep the font link and matching styles aligned when changing typefaces; review any external script references before adding or retaining them.
 - Inspect the layout at a narrow phone-sized viewport and a wide desktop-sized viewport. Check the message, section sequence, and typography at both sizes.
-- If you changed typefaces, check that the Google Fonts link and the matching styles in `index.html` agree.
 
 ## Accessibility review checklist
 
