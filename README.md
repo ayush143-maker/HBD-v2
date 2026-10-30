@@ -18,6 +18,10 @@ The page title is “A birthday page ✦”. Update the visible message and titl
 
 The root file list contains no separate media or asset directory. If you add an image or other asset, make sure its reference in `index.html` points to its actual location.
 
+## Configuration and data handling
+
+This is a static page with no environment template or backend configuration listed. Keep credentials and private values out of `index.html` and other tracked files; anything embedded in the page is delivered to visitors and cannot be secret. Review the message and any added assets for personal or sensitive content before sharing or publishing them. The linked Google Fonts are retrieved from an external service by visitors' browsers.
+
 ## Browser and layout review checklist
 
 This is a checklist for future review, not a report of completed browser testing or verified results.
