@@ -9,3 +9,5 @@ Open `index.html` in a browser, or start a local server from the repository dire
     python -m http.server 8000
 
 Then visit http://localhost:8000. No package manager or build command is required by the current repository. Content and visual sequence are defined in `index.html`; after editing, review the message and preserve the section order.
+
+No hosting provider or provider-specific deployment steps are documented. The page can be served as static content; no additional deployment configuration is described.
