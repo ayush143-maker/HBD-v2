@@ -18,16 +18,16 @@ The page title is “A birthday page ✦”. Update the visible message and titl
 
 The root file list contains no separate media or asset directory. If you add an image or other asset, make sure its reference in `index.html` points to its actual location.
 
-## Manual review checklist
+## Browser and layout review checklist
 
-These are actions to perform during review, not verified results or measured performance.
+This is a checklist for future review, not a report of completed browser testing or verified results.
 
-- Open `index.html` in a browser, or visit `http://localhost:8000` after starting the local server above.
+- Open `index.html` in current versions of browsers relevant to the page's intended audience. Also review it through the local server above to check loading in a served-page context.
 - Read the message and scroll through the celebratory sections to check that their existing order is preserved after content edits.
-- Check local image, audio, and font references in `index.html` against files that exist at those paths. The root file list contains no separate asset directory.
-- If media is added, review its dimensions and file size for its role; avoid oversized media and remove assets only after confirming they are unused.
-- The page links to Cormorant Garamond and Manrope through Google Fonts. Confirm that the external font dependency is intentional and the linked families are used. Keep the font link and matching styles aligned when changing typefaces; review any external script references before adding or retaining them.
-- Inspect the layout at a narrow phone-sized viewport and a wide desktop-sized viewport. Check the message, section sequence, and typography at both sizes.
+- Inspect the browser console during page load and while moving through the page. Investigate errors that affect the message or presentation.
+- Inspect the Network panel for failed requests. Check that local assets you add resolve at the paths referenced in `index.html`; the root file list contains no separate asset directory. Check the Google Fonts requests for Cormorant Garamond and Manrope, confirm they are intentional, and consider the fallback appearance if they cannot load.
+- Inspect the layout at a narrow phone-sized viewport and a wide desktop-sized viewport. Check the message, section sequence, and typography for clipping, overflow, or difficult-to-read text.
+- If media is added, review its dimensions and file size for its role. Before removing assets, confirm they are no longer referenced.
 
 ## Accessibility review checklist
 
