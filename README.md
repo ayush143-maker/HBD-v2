@@ -2,14 +2,10 @@
 
 A minimal birthday microsite built around a personal message and a sequence of celebratory sections. The single-page experience is contained in the top-level `index.html`; no additional controls are described.
 
-## Preview locally
+## Preview and review locally
 
-Open `index.html` in a modern browser, or, from the repository directory, start a local server:
+Open `index.html` in a modern browser, or start a local server from the repository directory:
 
     python -m http.server 8000
 
-Then visit http://localhost:8000. No package manager or build command is required by the current repository.
-
-## Updating the celebration
-
-Content and visual sequence are defined in `index.html`. Preserve the section order when editing the message or visual assets.
+Then visit http://localhost:8000. No package manager or build command is required by the current repository. Content and visual sequence are defined in `index.html`; after editing, review the message and preserve the section order.
