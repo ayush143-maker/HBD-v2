@@ -27,3 +27,14 @@ These are actions to perform during review, not verified results.
 - Check any image or media references in `index.html` against the assets' actual paths, especially if you added or moved assets.
 - Inspect the layout at a narrow phone-sized viewport and a wide desktop-sized viewport. Check the message, section sequence, and typography at both sizes.
 - If you changed typefaces, check that the Google Fonts link and the matching styles in `index.html` agree.
+
+## Accessibility review checklist
+
+These are future review actions, not claims that the page has been checked.
+
+- Use the keyboard to move through the page and operate any links or controls. Check that all interactive elements can be reached without pointer input.
+- Check that keyboard focus is clearly visible and distinguishable from the page backgrounds.
+- Review any links or controls for meaningful names, and check that the birthday message and section sequence make sense without visual styling alone.
+- Check text contrast against the backgrounds throughout the message and celebratory sections.
+- If images or media are added, check whether meaningful content needs a text alternative and whether decorative assets can be ignored by assistive technology.
+- Check any animation or transition with reduced motion requested, and consider reducing nonessential motion.
